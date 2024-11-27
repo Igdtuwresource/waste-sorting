@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Waste Sorting Game</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="game">
+                <div>
+                    <h4>Score: 20</h4>
+                    <h3>10</h3>
+                </div>
+                <div class="trash">
+                    <img src="assets/trash/plastic/3.png">
+                </div>
+
+                <div class="trashBins">
+                    <img name="glass"     src="assets/bin1.png">
+                    <img name="hazardous" src="assets/bin2.png">
+                    <img name="metal"     src="assets/bin3.png">
+                    <img name="paper"     src="assets/bin4.png">
+                    <img name="plastic"   src="assets/bin5.png">
+                    <img name="organic"   src="assets/bin6.png">
+                </div>
+                <div class="gameOver">
+                    <h1>Game Over!</h1><img src="giphy.webp" class="over">
+                    <p id="replayBtn">replay</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="bg"></div>
+	<div id="stars" class="star-a"></div>
+	<div id="stars" class="star-b"></div>
+	<div id="stars" class="star-c"></div>
+	<div id="stars" class="star-d"></div>
+	<div id="stars" class="star-e"></div>
+    </div>
+    <script>
+      var content = document.getElementsByTagName('body')[0];
+      var darkMode = document.getElementById('dark-change');
+      darkMode.addEventListener('click', function(){
+          darkMode.classList.toggle('active');
+          content.classList.toggle('night');
+      })
+  </script>
+        <script src="mail.js"></script>
+    </body>
+</html>
